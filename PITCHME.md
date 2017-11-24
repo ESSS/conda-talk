@@ -107,7 +107,7 @@ Note:
 
 ---
 
-## Still not good
+## It gets better
 
 ---
 
@@ -116,6 +116,13 @@ Note:
 ```
 > conda config --add channels conda-forge
 ```
+
+https://conda-forge.org/feedstocks/
+
+Note:
+Community effort to create a central channel for more packages
+A little bureocratic, but this is for the better
+(talk about the PiPy malicious packages)
 ---
 
 ## Working with Multiple Repos

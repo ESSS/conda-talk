@@ -5,11 +5,11 @@ includes:
   - {{ root }}/../3rdparty/environment.devenv.yml
 
 dependencies:
-- flask==0.12.2
-- pytest==3.2.1
-{% if os.sys.platform != 'win32' %}
-- uwsgi==2.0.12
-{% endif %}
+  - flask==0.12.2
+  - pytest==3.2.1
+  {% if os.sys.platform != 'win32' %}
+  - uwsgi==2.0.12
+  {% endif %}
 
 environment:
   PYTHONPATH:
