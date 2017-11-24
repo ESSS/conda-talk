@@ -24,8 +24,10 @@ Note:
 ![no power here](http://www.reactiongifs.com/r/2013/08/no-power.gif)
 
 <span class="fragment">OK, this is 2010</span>
-<span class="fragment">But try `pip install qt`</span>
 
+Note:
+Trying t
+pip doesn't have wheels. Nightmare to install vcredist. 
 --- 
 Python distributions (the old way):
 - Enthought |
@@ -34,7 +36,16 @@ Python distributions (the old way):
 - Anaconda |
 
 Note:
-pip doesn't have wheels. Nightmare to install vcredist. Distributions (in ESSS) also
+Anaconda started like a full dist
+Distributions (in ESSS) also
+---
+
+## Conda
+
+- No more "full dists"
+- Pick only what you need
+- Binaries ready to use, for most platforms
+
 ---
 
 @title[Creating and activating]
@@ -48,6 +59,8 @@ pip doesn't have wheels. Nightmare to install vcredist. Distributions (in ESSS) 
 @[2](Activate)
 @[3](Install packages)
 
+Note:
+Package downloaded from Continuum
 ---
 
 @title[Sharing Environments]
@@ -57,13 +70,16 @@ pip doesn't have wheels. Nightmare to install vcredist. Distributions (in ESSS) 
 
 > conda env export > environment.yml
 
-> conda create -f environment.yml
+> conda env create -f environment.yml
 ```
 
 @[1](List installed packages)
 @[3](Export to a env config file)
 @[5](Create an environment based on env config)
 
+Note:
+Package downloaded from Continuum
+Show and env.yml
 ---
 
 @title[Install specific versions]
