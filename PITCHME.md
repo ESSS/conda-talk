@@ -1,3 +1,5 @@
+@title[Intro]
+
 # conda
 # &
 # conda devenv
@@ -24,6 +26,8 @@ Famous Python distributions: |
 Note:
 pip doesn't have wheels. Nightmare to install vcredist. Distributions (in ESSS) also
 ---
+
+@title[How to Use]
 
 Creating and activating 
 ```shell
@@ -85,6 +89,8 @@ The following NEW packages will be INSTALLED:
 
 ---
 
+@title[Comparisson]
+
 ### conda x virtualenv
 
 - conda manages python versions
@@ -96,13 +102,15 @@ The following NEW packages will be INSTALLED:
 
 <ul>
 <li>No compiler needed for C ext <span class="fragment">(before wheels)</span></li>
-<li>Multiple version of binaries (no flags, deppies, options)</li>
+<li>Multiple version of binaries (cc flags, deppies)</li>
 <li>Channels (Anaconda or private)</li>
 </ul>
 
 Note:
 
 ---
+
+@title[conda-forge]
 
 ## Still not good
 
@@ -115,6 +123,8 @@ Note:
 ```
 ---
 
+@title[mu-repo]
+
 ## Working with Multiple Repos
 
 ![mu-repo](assets/mu-repo.png)
@@ -124,7 +134,8 @@ Note:
 - Drawback (could become hight coupled)
 ---
 
-## Multiple repos synch
+## mu-repo
+Multiple Git repos synch
 
 ```shell
 > conda install mu_repo
@@ -134,6 +145,8 @@ Note:
 Note:
 Show mu commands (status, commit)
 ---
+
+@title[conda-devenv]
 
 ## Conda DevEnv
 
@@ -152,9 +165,9 @@ Live example
 
 ---?code=sample.devenv.yml&lang=yaml
 
-@[4-7](Include other environment files)
+@[3-6](Include other environment files)
 @[7-13](Jinja 2 support)
-@[14-26](Define System variables
+@[14-26](Define System variables)
 
 ---
 
