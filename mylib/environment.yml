@@ -1,3 +1,0 @@
-name: mylib
-dependencies:
-- pandas=0.21 

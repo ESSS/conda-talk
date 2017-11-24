@@ -10,26 +10,30 @@
 
 https://conda.io/miniconda.html
 
+Note:
 ---
 
-### Famous Python distributions
+### Why Conda?
 
-- Enthought
-- WxPython
-- Python(x,y)
+Famous Python distributions: |
+- Enthought |
+- WxPython |
+- Python(x,y) |
 - Anaconda |
 
+Note:
+pip doesn't have wheels. Nightmare to install vcredist. Distributions (in ESSS) also
 ---
 
-Creating and activating
+Creating and activating 
 ```shell
 > conda create -n mylib
 > source activate mylib
 > conda install pandas
 > conda list
 ```
-@[1-3]
-@[4]
+@[1-2]
+@[3-4]
 
 ---
 
@@ -46,6 +50,8 @@ Sharing environments
 @[1]
 @[3]
 @[5]
+
+Note:
 
 ---
 
@@ -89,22 +95,51 @@ The following NEW packages will be INSTALLED:
 ### conda x pip
 
 <ul>
-<li>No compiler needed for C ext<span class="fragment">(before wheels)</span></li>
-<li>One version of the binaries (no flags, deppies, options)</li>
-<li>Channels (conda-forge, private)</li>
+<li>No compiler needed for C ext <span class="fragment">(before pytnon wheels)</span></li>
+<li>Multiple version of the binaries (no flags, deppies, options)</li>
+<li>Channels (Anaconda or private)</li>
 </ul>
 
----
-
-### mu-repo
-
-Multiple repositories synchronization
-
-![Logo](assets/mu-repo.png)
+Note:
 
 ---
 
-- Conda Documentation, https://conda.io
+## Still not good
+
+---
+
+## conda-forge
+
+```
+> conda config --add channels conda-forge
+```
+---
+
+## Working with Multiple Repos
+
+![mu-repo](assets/mu-repo.png)
+
+Note:
+- Why work with source (lib not mature, easier management, new dev incentive)
+- Drawback (could become hight coupled)
+---
+
+## Multiple repositories synchronization
+
+```shell
+> conda install mu_repo
+> mu register myapp ../mylib1
+```
+
+Note:
+Show mu commands (status, commit)
+---
+
+## Conda DevEnv
+
+---
+
+- Conda, https://conda.io
 - mu-repo, http://fabioz.github.io/mu-repo/
+- conda-devenv, https://conda-devenv.readthedocs.io
 - Fernandes, Filipe; *Community powered packaging: conda-forge*, PyCon 2017
-
