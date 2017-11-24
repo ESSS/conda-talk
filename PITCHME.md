@@ -95,8 +95,8 @@ The following NEW packages will be INSTALLED:
 ### conda x pip
 
 <ul>
-<li>No compiler needed for C ext <span class="fragment">(before pytnon wheels)</span></li>
-<li>Multiple version of the binaries (no flags, deppies, options)</li>
+<li>No compiler needed for C ext <span class="fragment">(before wheels)</span></li>
+<li>Multiple version of binaries (no flags, deppies, options)</li>
 <li>Channels (Anaconda or private)</li>
 </ul>
 
@@ -124,7 +124,7 @@ Note:
 - Drawback (could become hight coupled)
 ---
 
-## Multiple repositories synchronization
+## Multiple repos synch
 
 ```shell
 > conda install mu_repo
@@ -136,6 +136,25 @@ Show mu commands (status, commit)
 ---
 
 ## Conda DevEnv
+
+conda-env extension to work with multiple repos in dev mode
+
+Note:
+Live example
+- show mylib
+- try to use mylib (and fail)
+- show what is a devenv.yml
+- load the *myapp-devenv* environment
+
+---
+
+## Main Features:
+
+---?code=sample.devenv.yml&lang=yaml
+
+@[4-7](Include other environment files)
+@[7-13](Jinja 2 support)
+@[14-26](Define System variables
 
 ---
 
