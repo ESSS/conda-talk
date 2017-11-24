@@ -17,7 +17,17 @@ Note:
 
 ### Why Conda?
 
-Famous Python distributions: |
+---
+
+`pip install numpy`
+
+![no power here](http://www.reactiongifs.com/r/2013/08/no-power.gif)
+
+<span class="fragment">OK, this is 2010</span>
+<span class="fragment">But try `pip install qt`</span>
+
+--- 
+Python distributions (the old way):
 - Enthought |
 - WxPython |
 - Python(x,y) |
