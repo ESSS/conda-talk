@@ -27,21 +27,20 @@ Note:
 pip doesn't have wheels. Nightmare to install vcredist. Distributions (in ESSS) also
 ---
 
-@title[How to Use]
+@title[Creating and activating]
 
-Creating and activating 
 ```shell
 > conda create -n mylib
 > source activate mylib
 > conda install pandas
-> conda list
 ```
-@[1-2]
-@[3-4]
+@[1](Create a new environment)
+@[2](Activate)
+@[3](Install packages)
 
 ---
 
-Sharing environments
+@title[Sharing Environments]
 
 ```shell
 > conda list
@@ -51,15 +50,13 @@ Sharing environments
 > conda create -f environment.yml
 ```
 
-@[1]
-@[3]
-@[5]
-
-Note:
+@[1](List installed packages)
+@[3](Export to a env config file)
+@[5](Create an environment based on env config)
 
 ---
 
-Install specific versions
+@title[Install specific versions]
 
 ```shell
 > conda create -n mypy27 python=2.7 numpy=1.11
@@ -110,8 +107,6 @@ Note:
 
 ---
 
-@title[conda-forge]
-
 ## Still not good
 
 ---
@@ -122,8 +117,6 @@ Note:
 > conda config --add channels conda-forge
 ```
 ---
-
-@title[mu-repo]
 
 ## Working with Multiple Repos
 
