@@ -23,8 +23,6 @@ Note:
 
 ![no power here](http://www.reactiongifs.com/r/2013/08/no-power.gif)
 
-<span class="fragment">OK, this is 2010</span>
-
 Note:
 Trying t
 pip doesn't have wheels. Nightmare to install vcredist. 
@@ -46,6 +44,8 @@ Distributions (in ESSS) also
 - Pick only what you need
 - Binaries ready to use, for most platforms
 
+Note:
+Anaconda Repo
 ---
 
 @title[Creating and activating]
