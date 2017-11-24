@@ -4,6 +4,12 @@
 
 ---
 
+### What is conda?
+
+*Package, dependency and environment management*
+
+https://conda.io/miniconda.html
+
 ---
 
 ### Famous Python distributions
@@ -13,17 +19,15 @@
 - Python(x,y)
 - Anaconda |
 
-
 ---
 
 Creating and activating
 ```shell
-conda create -n mylib
-activate mylib
-conda install pandas
-conda list
+> conda create -n mylib
+> source activate mylib
+> conda install pandas
+> conda list
 ```
-
 @[1-3]
 @[4]
 
@@ -32,23 +36,23 @@ conda list
 Sharing environments
 
 ```shell
-conda list
+> conda list
 
-conda env export > environment.yml
+> conda env export > environment.yml
 
-conda create -f environment.yml
+> conda create -f environment.yml
 ```
 
 @[1]
-@[2]
 @[3]
+@[5]
 
 ---
 
 Install specific versions
 
 ```shell
-λ conda create -n mypy27 python=2.7 numpy=1.11
+> conda create -n mypy27 python=2.7 numpy=1.11
 Fetching package metadata .............
 Solving package specifications: .
 
@@ -68,36 +72,39 @@ The following NEW packages will be INSTALLED:
     vs2008_runtime: 9.00.30729.1-hfaea7d5_1
     wheel:          0.30.0-py27ha643586_1
     wincertstore:   0.2-py27hf04cefb_0
-
-Proceed ([y]/n)? y
-#
-# To activate this environment, use:
-# > activate mypy27
-#
-# To deactivate an active environment, use:
-# > deactivate
-#
-# * for power-users using bash, you must source
 ```
 
 @[1]
 @[2-22]
 
+---
+
+### conda x virtualenv
+
+- conda manages python versions
+- hardlink packages
 
 ---
 
 ### conda x pip
 
-- No copiler for C extension<div class="fragment">(before wheels)</div>
-- channels |
+<ul>
+<li>No compiler needed for C ext<span class="fragment">(before wheels)</span></li>
+<li>One version of the binaries (no flags, deppies, options)</li>
+<li>Channels (conda-forge, private)</li>
+</ul>
 
 ---
 
-## conda x virtualenv
+### mu-repo
 
-- conda manages python version
+Multiple repositories synchronization
+
+![Logo](assets/mu-repo.png)
 
 ---
 
+- Conda Documentation, https://conda.io
+- mu-repo, http://fabioz.github.io/mu-repo/
+- Fernandes, Filipe; *Community powered packaging: conda-forge*, PyCon 2017
 
-Fernandes, Filipe - *Community powered packaging conda forge*, PyCon 2017
