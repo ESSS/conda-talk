@@ -223,6 +223,7 @@ in ESSS 10 levels
 @title[Thanks]
 
 Thanks
+
 ![thanks](assets/thanks.gif)
 
 <small>igor.ghisi(at)gmail</small>
