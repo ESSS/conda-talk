@@ -13,6 +13,7 @@
 https://conda.io/miniconda.html
 
 Note:
+replaces pip and virtualenv
 ---
 
 ### Why Conda?
@@ -26,7 +27,7 @@ Note:
 ![no power here](http://www.reactiongifs.com/r/2013/08/no-power.gif)
 
 Note:
-Trying t
+Scientific libraries (relying to C ext) do not install
 pip doesn't have wheels. Nightmare to install vcredist. 
 --- 
 
@@ -39,8 +40,9 @@ Python distributions (the old way):
 - Anaconda |
 
 Note:
-Anaconda started like a full dist
 Distributions (in ESSS) also
+Anaconda started like a full dist
+Anaconda differential, conda package man and env.
 ---
 
 ## Conda
@@ -176,7 +178,7 @@ Multiple Git repos synch
 
 ```shell
 > conda install mu_repo
-> mu register myapp ../mylib1
+> mu register ../mydeppy
 ```
 
 Note:
