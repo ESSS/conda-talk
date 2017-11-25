@@ -19,6 +19,8 @@ Note:
 
 ---
 
+@title[pip hell]
+
 `pip install numpy`
 
 ![no power here](http://www.reactiongifs.com/r/2013/08/no-power.gif)
@@ -27,6 +29,9 @@ Note:
 Trying t
 pip doesn't have wheels. Nightmare to install vcredist. 
 --- 
+
+@title[Old Python dists]
+
 Python distributions (the old way):
 - Enthought |
 - WxPython |
@@ -178,8 +183,6 @@ Note:
 Show mu commands (status, commit)
 ---
 
-@title[conda-devenv]
-
 ## Conda DevEnv
 
 conda-env extension to work with multiple repos in dev mode
@@ -197,6 +200,8 @@ Live example
 
 ---?code=sample.devenv.yml&lang=yaml
 
+@title[conda-devenv features]
+
 @[3-6](Include other environment files)
 @[7-13](Jinja 2 support)
 @[14-26](Define System variables)
@@ -205,6 +210,8 @@ Note:
 in ESSS 10 levels 
 ---
 
+@title[References]
+
 - Conda, https://conda.io
 - mu-repo, http://fabioz.github.io/mu-repo/
 - conda-devenv, https://conda-devenv.readthedocs.io
@@ -212,6 +219,8 @@ in ESSS 10 levels
 - VanderPlas, Jake; *Conda: Myths and Misconceptions*, https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/
 
 ---
+
+@title[Thanks]
 
 Thanks
 ![thanks](assets/thanks.gif)
