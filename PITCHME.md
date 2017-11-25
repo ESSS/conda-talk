@@ -43,6 +43,7 @@ Distributions (in ESSS) also
 - No more "full dists"
 - Pick only what you need
 - Binaries ready to use, for most platforms
+- https://conda.io/miniconda.html
 
 Note:
 Anaconda Repo
@@ -62,7 +63,11 @@ Anaconda Repo
 Note:
 Package downloaded from Continuum
 ---
+@title[Anaconda Packages]
 
+https://anaconda.org/anaconda/repo
+
+---
 @title[Sharing Environments]
 
 ```shell
@@ -127,6 +132,7 @@ The following NEW packages will be INSTALLED:
 <li>No compiler needed for C ext <span class="fragment">(before wheels)</span></li>
 <li>Multiple version of binaries (cc flags, deppies)</li>
 <li>Channels (Anaconda or private)</li>
+<li>Dealt with non-python packages</li>
 </ul>
 
 Note:
@@ -201,3 +207,11 @@ Live example
 - mu-repo, http://fabioz.github.io/mu-repo/
 - conda-devenv, https://conda-devenv.readthedocs.io
 - Fernandes, Filipe; *Community powered packaging: conda-forge*, PyCon 2017
+- VanderPlas, Jake; *Conda: Myths and Misconceptions*, https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/
+
+---
+
+Thanks
+[thanks](assets/thanks.gif)
+
+<small>igor.ghisi(at)gmail</small>
