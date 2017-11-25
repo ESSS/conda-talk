@@ -1,14 +1,13 @@
 @title[Intro]
 
-# conda
-# &
-# conda devenv
+# conda intro
+### (with Power-ups)
 
 ---
 
 @title[ESSS Products]
 
-![esss-products](assets/esss-prods.png)
+<img src="assets/esss-prods.png" alt="ESSS Products" style="height: 600px;">
 
 ---
 
@@ -185,6 +184,7 @@ Multiple Git repos synch
 ```shell
 > conda install mu_repo
 > mu register ../mydeppy
+> mu <any-git-subcommand>
 ```
 
 Note:
@@ -194,6 +194,10 @@ Show mu commands (status, commit)
 ## Conda DevEnv
 
 conda-env extension to work with multiple repos in dev mode
+
+```shell
+> conda install devenv
+```
 
 Note:
 Live example
