@@ -1,0 +1,25 @@
+name: dataservice
+
+includes:
+  - {{ root }}/../mylib/environment.devenv.yml
+  - {{ root }}/../3rdparty/environment.devenv.yml
+
+dependencies:
+  - flask==0.12.2
+  - pytest==3.2.1
+  {% if os.sys.platform != 'win32' %}
+  - uwsgi==2.0.12
+  {% endif %}
+
+environment:
+  PYTHONPATH:
+    - {{ root }}/src
+  STAGE: DEVELOPMENT
+
+  {% if os.sys.platform != 'win32' %}
+  LD_LIBRARY_PATH:
+    - {{ root }}/artifacts-py{{ CONDA_PY }}/libs
+  {% else %}
+  PATH:
+    - {{ root }}\artifacts-py{{ CONDA_PY }}\libs
+  {% endif %}
