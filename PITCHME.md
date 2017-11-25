@@ -6,6 +6,12 @@
 
 ---
 
+@title[ESSS Products]
+
+![esss-products](assets/esss-prods.png)
+
+---
+
 ### What is conda?
 
 *Package, dependency and environment management*
