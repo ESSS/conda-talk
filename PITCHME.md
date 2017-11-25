@@ -229,3 +229,5 @@ Thanks
 ![thanks](assets/thanks.gif)
 
 <small>igor.ghisi(at)gmail</small>
+
+gitpitch.com/esss/conda-talk
