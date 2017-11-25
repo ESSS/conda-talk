@@ -201,6 +201,8 @@ Live example
 @[7-13](Jinja 2 support)
 @[14-26](Define System variables)
 
+Note:
+in ESSS 10 levels 
 ---
 
 - Conda, https://conda.io
@@ -212,6 +214,6 @@ Live example
 ---
 
 Thanks
-[thanks](assets/thanks.gif)
+![thanks](assets/thanks.gif)
 
 <small>igor.ghisi(at)gmail</small>
